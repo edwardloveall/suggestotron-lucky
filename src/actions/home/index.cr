@@ -1,5 +1,5 @@
 class Home::Index < BaseAction
   get "/" do
-    render LuckyWeb::WelcomePage
+    redirect to: Topics::Index
   end
 end
