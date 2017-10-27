@@ -1,12 +1,12 @@
-name: first
+name: suggestotron
 version: 0.1.0
 
 authors:
   - Edward Loveall <edward@edwardloveall.com>
 
 targets:
-  first:
-    main: src/first.cr
+  suggestotron:
+    main: src/suggestotron.cr
 
 crystal: 0.23.1
 

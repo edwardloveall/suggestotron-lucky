@@ -1,4 +1,4 @@
-database = "first_#{Lucky::Env.name}"
+database = "suggestotron_#{Lucky::Env.name}"
 
 LuckyRecord::Repo.configure do
   if Lucky::Env.production?

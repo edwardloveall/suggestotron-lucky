@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe First do
+describe Suggestotron do
   # TODO: Write tests
 
   it "works" do

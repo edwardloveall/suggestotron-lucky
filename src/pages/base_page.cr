@@ -11,7 +11,7 @@ abstract class BasePage
   end
 
   def page_title
-    "Lucky - change at src/pages/base_page.cr"
+    "Suggestotron"
   end
 
   def errors_for(field : LuckyRecord::AllowedField)
