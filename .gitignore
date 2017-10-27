@@ -1,0 +1,8 @@
+/doc/
+/lib/
+/bin/
+/.shards/
+/node_modules
+yarn-error.log
+/public/
+server

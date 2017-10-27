@@ -1,0 +1,21 @@
+name: first
+version: 0.1.0
+
+authors:
+  - Edward Loveall <edward@edwardloveall.com>
+
+targets:
+  first:
+    main: src/first.cr
+
+crystal: 0.23.1
+
+license: MIT
+
+dependencies:
+  lucky_web:
+    github: luckyframework/web
+    version: ~> 0.4.2
+  lucky_migrator:
+    github: luckyframework/migrator
+    version: ~> 0.2.3
