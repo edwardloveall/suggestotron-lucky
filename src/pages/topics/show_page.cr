@@ -12,6 +12,8 @@ class Topics::ShowPage < BasePage
         text description
       end
     end
+    link "Edit", to: Topics::Edit.route(@topic)
+    text " | "
     link "Back", to: Topics::Index
   end
 end
