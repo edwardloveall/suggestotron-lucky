@@ -9,7 +9,7 @@ class Topics::IndexPage < BasePage
     ul do
       @topics.each do |topic|
         li do
-          text topic.title
+          link topic.title, to: Topics::Show.route(topic)
           link "Delete", to: Topics::Delete.route(topic)
         end
       end
