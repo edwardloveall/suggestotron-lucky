@@ -33,6 +33,12 @@ exports.plugins = {
       require("postcss-cssnext")(),
       require("postcss-sass-color-functions")
     ]
+  },
+  sass: {
+    mode: "native",
+    options: {
+      includePaths: require("bourbon").includePaths
+    }
   }
 }
 
