@@ -14,10 +14,7 @@ class Topics::IndexPage < BasePage
           link topic.title, to: Topics::Show.route(topic)
           link "Edit", to: Topics::Edit.route(topic)
           link "Delete", to: Topics::Delete.route(topic)
-          form_for Topics::Votes::Create.route(topic) do
-            hidden_input @vote_form.topic_id, value: topic.id.to_s
-            submit "+1"
-          end
+          link "+1", to: Topics::Votes::Create.route(topic_id: topic)
         end
       end
     end
