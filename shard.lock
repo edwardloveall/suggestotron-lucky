@@ -10,11 +10,11 @@ shards:
 
   habitat:
     github: luckyframework/habitat
-    version: 0.1.0
+    version: 0.2.0
 
   lucky_cli:
     github: luckyframework/cli
-    version: 0.5.0
+    version: 0.6.2
 
   lucky_migrator:
     github: luckyframework/migrator
@@ -22,7 +22,7 @@ shards:
 
   lucky_record:
     github: luckyframework/record
-    version: 0.1.2
+    version: 0.2.1
 
   lucky_router:
     github: luckyframework/router
