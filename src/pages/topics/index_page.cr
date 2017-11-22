@@ -1,8 +1,8 @@
-class Topics::IndexPage < BasePage
+class Topics::IndexPage < MainLayout
   needs topics : TopicQuery
   needs vote_form : VoteForm
 
-  render do
+  def inner
     h1 "Topics"
 
     link "New Topic", to: Topics::New

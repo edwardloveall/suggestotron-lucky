@@ -1,4 +1,4 @@
-class Topics::Update < BaseAction
+class Topics::Update < BrowserAction
   action do
     topic = TopicQuery.new.find(id)
     TopicForm.update topic, with: params do |form, topic|

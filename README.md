@@ -1,27 +1,13 @@
-# suggestotron
+# trash-me
 
-TODO: Write a description here
+This is a project written using [Lucky](https://luckyframework.org). Enjoy!
 
-## Installation
+### Setting up the project
 
-TODO: Write installation instructions here
+1. [Install required dependencies](http://luckyframework.org/guides/installing.html#install-required-dependencies)
+1. Run `bin/setup`
+1. Run `lucky dev` to start the app
 
-## Usage
+### Learning Lucky
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[your-github-name]/suggestotron-lucky/fork )
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create a new Pull Request
-
-## Contributors
-
-- [[your-github-name]](https://github.com/[your-github-name]) Edward Loveall - creator, maintainer
+Lucky uses the [Crystal](https://crystal-lang.org) programming language. You can learn about Lucky from the [Lucky Guides](http://luckyframework.org/guides).

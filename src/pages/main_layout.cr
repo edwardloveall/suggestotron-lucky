@@ -1,23 +1,35 @@
-class MainLayout
-  include LuckyWeb::Page
-  include LuckyWeb::Layout
+abstract class MainLayout
+  include LuckyWeb::HTMLPage
+  include Shared::FieldErrorsComponent
+  include Shared::FlashComponent
 
-  @page : BasePage
+  # You can put things here that all pages need
+  #
+  # Example:
+  #   needs current_user : User
+  needs flash : LuckyWeb::Flash::Store
 
-  render do
+  abstract def inner
+
+  def render
     html_doctype
 
-    html do
+    html lang: "en" do
       head do
         utf8_charset
-        title @page.page_title
+        title page_title
         css_link asset("css/app.css")
         js_link asset("js/app.js")
       end
 
       body do
-        @page.render_inner
+        render_flash
+        inner
       end
     end
+  end
+
+  def page_title
+    "Suggestotron"
   end
 end

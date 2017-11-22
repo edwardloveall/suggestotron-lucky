@@ -1,13 +1,13 @@
-class Topics::ShowPage < BasePage
+class Topics::ShowPage < MainLayout
   needs topic : Topic
 
-  render do
-    p do
+  def inner
+    para do
       strong "Title: "
       text @topic.title
     end
     if description = @topic.description
-      p do
+      para do
         strong "Description: "
         text description
       end

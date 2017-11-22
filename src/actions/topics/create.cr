@@ -1,6 +1,6 @@
-class Topics::Create < BaseAction
+class Topics::Create < BrowserAction
   action do
-    TopicForm.save params do |form, topic|
+    TopicForm.create params do |form, topic|
       if topic
         redirect to: Topics::Index
       else

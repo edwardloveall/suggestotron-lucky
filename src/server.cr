@@ -8,10 +8,12 @@ else
 end
 server = HTTP::Server.new(host, port.to_i, [
   LuckyWeb::HttpMethodOverrideHandler.new,
-  HTTP::ErrorHandler.new,
-  HTTP::LogHandler.new,
+  LuckyWeb::LogHandler.new,
+  LuckyWeb::SessionHandler.new,
+  LuckyWeb::Flash::Handler.new,
+  LuckyWeb::ErrorHandler.new(action: Errors::Show),
   LuckyWeb::RouteHandler.new,
-  HTTP::StaticFileHandler.new("./public", false),
+  LuckyWeb::StaticFileHandler.new("./public", false),
 ])
 
 puts "Listening on http://#{host}:#{port}..."

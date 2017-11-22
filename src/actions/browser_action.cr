@@ -1,4 +1,4 @@
-abstract class BaseAction < LuckyWeb::Action
+abstract class BrowserAction < LuckyWeb::Action
   # If something should always be exposed to your pages, expose them here.
   #
   # Example:
@@ -9,5 +9,6 @@ abstract class BaseAction < LuckyWeb::Action
   #    find_the_user...
   #  end
   #
-  # Then add an assign for it in your BasePage
+  # Then add an assign for it in your MainPage
+  expose flash
 end

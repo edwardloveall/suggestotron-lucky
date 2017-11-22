@@ -1,7 +1,7 @@
-class Topics::NewPage < BasePage
+class Topics::NewPage < MainLayout
   needs topic_form : TopicForm
 
-  render do
+  def inner
     h1 "Create a new Topic"
     render_topic_form(@topic_form)
   end

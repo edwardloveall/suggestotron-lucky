@@ -1,8 +1,8 @@
-class Topics::EditPage < BasePage
+class Topics::EditPage < MainLayout
   needs topic : Topic
   needs topic_form : TopicForm
 
-  render do
+  def inner
     h1 "Edit Topic"
     render_topic_form(@topic, @topic_form)
   end
