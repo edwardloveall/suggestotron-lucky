@@ -15,7 +15,10 @@ license: MIT
 dependencies:
   lucky_web:
     github: luckyframework/web
-    version: ~> 0.4.2
+    commit: dc0a739
+  lucky_record:
+    github: luckyframework/record
+    commit: e535072
   lucky_migrator:
     github: luckyframework/migrator
-    version: ~> 0.2.3
+    commit: bd203f9
