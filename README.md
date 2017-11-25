@@ -1,6 +1,8 @@
-# trash-me
+# suggestotron
 
 This is a project written using [Lucky](https://luckyframework.org). Enjoy!
+
+It is more-or-less a test project to play around with the framework.
 
 ### Setting up the project
 
